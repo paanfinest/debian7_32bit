@@ -88,7 +88,11 @@ echo "screenfetch-dev" >> .profile
 $ curl -L "https://bintray.com/user/downloadSubjectPublicKey?username=bintray" -o Release-neofetch.key
 # apt-key add Release-neofetch.key
 # apt update
+
 # apt install neofetch
+$ neofetch
+$ neofetch options
+$ neofetch --config off --bold off --colors 4 1 8 8 8 7
 echo "clear" >> .bashrc 
 echo 'e "                 __   _,--="=--,_   __' >> .bashrc
 echo 'e "                /  \."    .-.    "./  \' >> .bashrc
