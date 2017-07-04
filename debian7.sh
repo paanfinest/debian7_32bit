@@ -2,12 +2,6 @@
 # 
 #Script Copyright www.fornesia.com # Mod Pa'an Finest 
 # ================================================== 
-# 
-# initialisasi 
-var export DEBIAN_FRONTEND=noninteractive 
-OS=`uname -m`; 
-MYIP=$(wget -qO- ipv4.icanhazip.com); 
-MYIP2="s/xxxxxxxxx/$MYIP/g"; 
 
 # go to root 
 cd 
@@ -65,30 +59,6 @@ apt-file update
 # setting vnstat
 vnstat -u -i venet0
 service vnstat restart
-
-# update
-apt-get update; apt-get -y upgrade;
-
-# install webserver
-apt-get -y install nginx php5-fpm php5-cli
-
-# install essential package
-apt-get -y install bmon iftop htop nmap axel nano iptables traceroute sysv-rc-conf dnsutils bc nethogs openvpn vnstat less screen psmisc apt-file whois ptunnel ngrep mtr git zsh mrtg snmp snmpd snmp-mibs-downloader unzip unrar rsyslog debsums rkhunter
-apt-get -y install build-essential
-
-# disable exim
-service exim4 stop
-sysv-rc-conf exim4 off
-
-# update apt-file
-apt-file update
-
-# setting vnstat
-vnstat -u -i venet0
-service vnstat restart
-
-# install screenfetch
-cd
 
 #touch screenfetch-dev
 cd
@@ -151,7 +121,6 @@ wget -O /etc/openvpn/client.ovpn "https://raw.githubusercontent.com/panfinest/de
 sed -i $MYIP2 /etc/openvpn/client.ovpn; 
 cp client.ovpn /home/vps/public_html/ 
 
-cd 
 # install badvpn 
 wget -O /usr/bin/badvpn-udpgw "https://github.com/ForNesiaFreak/FNS/raw/master/sett/badvpn-udpgw" 
 if [ "$OS" == "x86_64" ]; then 
@@ -161,7 +130,6 @@ sed -i '$ i\screen -AmdS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7300' /etc/
 chmod +x /usr/bin/badvpn-udpgw 
 screen -AmdS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7300 
 
-cd 
 # setting port ssh 
 sed -i 's/Port 22/Port 22/g' /etc/ssh/sshd_config 
 sed -i '/Port 22/a Port 143' /etc/ssh/sshd_config 
@@ -177,7 +145,6 @@ echo "/usr/sbin/nologin" >> /etc/shells
 service ssh restart 
 service dropbear restart 
 
-cd 
 # install squid3 
 apt-get -y install squid3 
 wget -O /etc/squid3/squid.conf "https://raw.githubusercontent.com/paanfinest/debian7_32bit/master/squid3.conf" 
