@@ -76,6 +76,14 @@ apt-get -y install build-essential
 service exim4 stop 
 sysv-rc-conf exim4 off
 
+# install screenfetch
+cd
+wget 'https://raw.githubusercontent.com/ForNesiaFreak/FNS_Debian7/fornesia.com/null/screenfetch-dev'
+mv screenfetch-dev /usr/bin/screenfetch-dev
+chmod +x /usr/bin/screenfetch-dev
+echo "clear" >> .profile
+echo "screenfetch-dev" >> .profile
+
 # install neofetch 
 echo "deb http://dl.bintray.com/dawidd6/neofetch jessie main" | sudo tee -a /etc/apt/sources.list curl -L "https://bintray.com/user/downloadSubjectPublicKey?username=bintray" -o Release-neofetch.key && sudo apt-key add Release-neofetch.key && rm Release-neofetch.key 
 apt-get update 
