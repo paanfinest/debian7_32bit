@@ -11,9 +11,9 @@ echo -e "            .-"-.   \      |      /   .-"-."
 echo -e "      .----{     }--|  /,.-'-.,\  |--{     }----"
 echo -e "       )   (_)_)_)  \_/`~-===-~`\_/  (_(_(_)   ("
 echo -e " (|SELAMAT DATANG DI VPS PHREAKER'S JATENG OFFICIAL|)"
-echo -e "  )#Admin : Pa'an Finest   |Admin : Imron Sya'faat#("
-echo -e " ( #Admin : Affan Fattahila|Admin : Said Ramadhan # )"
-echo -e "  )#Admin : Vicky Bramasta |Admin : Aji KA        #("
+echo -e "  )#Admin : Pa'an Finest     Admin : Imron Sya'faat#("
+echo -e " ( #Admin : Affan Fattahila  Admin : Said Ramadhan # )"
+echo -e "  )#Admin : Vicky Bramantiya Admin : Aji Kurniawan #("
 echo -e " '------------------------------------------------'
 
 echo -e "1.)menu (Menampilkan Daftar Perintah)"   echo -e "9.)speedtest (Speedtest VPS)
