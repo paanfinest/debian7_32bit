@@ -184,7 +184,8 @@ echo "-------" | tee -a log-install.txt
 echo "OpenSSH : 22, 143" | tee -a log-install.txt 
 echo "Dropbear : 80, 443" | tee -a log-install.txt 
 echo "Squid3 : 8080, 3128, 80 (limit to IP SSH)" | tee -a log-install.txt 
-echo "OpenVPN : TCP 1194 (client config : http://$MYIP:81/client.ovpn)" | tee -a log-install.txt echo "badvpn : badvpn-udpgw port 7300" | tee -a log-install.txt 
+echo "OpenVPN : TCP 1194 (client config : http://$MYIP:81/client.ovpn)" | tee -a log-install.txt 
+echo "badvpn : badvpn-udpgw port 7300" | tee -a log-install.txt 
 echo "nginx : 81" | tee -a log-install.txt 
 echo "" | tee -a log-install.txt 
 echo "Script" | tee -a log-install.txt 
@@ -209,7 +210,7 @@ echo "" | tee -a log-install.txt
 echo "Original Script by Fornesia, Rzengineer & Fawzya" | tee -a log-install.txt echo "Modifi By Pa'an Finest" | tee -a log-install.txt 
 echo "" | tee -a log-install.txt 
 echo "Log Instalasi --> /root/log-install.txt" | tee -a log-install.txt 
-echo "" | tee -a log-install.txt echo "VPS AUTO REBOOT TIAP 12 JAM, SILAHKAN REBOOT VPS ANDA" | tee -a log-install.txt 
+echo "" | tee -a log-install.txt echo "INSTAL SUKSES BOS!!!, SILAHKAN REBOOT VPS ANDA" | tee -a log-install.txt 
 echo "" | tee -a log-install.txt echo "===========================================" | tee -a log-install.txt 
 cd 
 rm -f /root/debian7.sh
