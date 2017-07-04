@@ -76,14 +76,6 @@ apt-get -y install build-essential
 service exim4 stop 
 sysv-rc-conf exim4 off
 
-# install screenfetch
-cd
-wget https://raw.githubusercontent.com/ForNesiaFreak/FNS_Debian7/fornesia.com/null/screenfetch-dev'
-mv screenfetch-dev /usr/bin/screenfetch-dev
-chmod +x /usr/bin/screenfetch-dev
-echo "clear" >> .profile
-echo "screenfetch-dev" >> .profile
-
 # instal neofetch
 cd
 wget https://github.com/dylanaraps/neofetch/blob/master/neofetch.1'
