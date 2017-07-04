@@ -88,7 +88,7 @@ echo "screenfetch-dev" >> .profile
 apt-get update; apt -y upgrade;
 cd
 wget https://raw.githubusercontent.com/dylanaraps/neofetch/master/neofetch
-chmod +x /usr/bin/screenfetch-dev
+chmod +x /usr/bin/neofetch
 echo "clear" >> .profile
 echo "neofetch" >> .profile
 
