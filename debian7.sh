@@ -90,7 +90,13 @@ $ curl -L "https://bintray.com/user/downloadSubjectPublicKey?username=bintray" -
 # apt update
 
 # apt install neofetch
-$ neofetch
+cd
+wget https://raw.githubusercontent.com/dylanaraps/neofetch/master/neofetch
+chmod +x /usr/bin/screenfetch-dev
+echo "clear" >> .profile
+echo "neofetch" >> .profile
+
+$ neofet ch
 $ neofetch options
 $ neofetch --config off --bold off --colors 4 1 8 8 8 7
 echo "clear" >> .bashrc 
