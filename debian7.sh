@@ -83,15 +83,6 @@ mv screenfetch-dev /usr/bin/screenfetch-dev
 chmod +x /usr/bin/screenfetch-dev
 echo "clear" >> .profile
 echo "screenfetch-dev" >> .profile
-
-# apt install neofetch
-apt-get update; apt -y upgrade;
-cd
-wget https://raw.githubusercontent.com/dylanaraps/neofetch/master/neofetch
-chmod +x /usr/bin/neofetch
-echo "clear" >> .profile
-echo "neofetch" >> .profile
-
 $ neofet ch
 $ neofetch options
 $ neofetch --config off --bold off --colors 4 1 8 8 8 7
