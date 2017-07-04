@@ -92,7 +92,6 @@ chmod +x /usr/bin/neofetch
 echo "clear" >> .profile
 
 # install neofetch
-echo "deb http://http.debian.net/debian/pool/main/n/neofetch/neofetch_3.2.0-1.debian.tar.xz"
 echo "deb http://dl.bintray.com/dawidd6/neofetch jessie main" | sudo tee -a /etc/apt/sources.list
 curl -L "https://bintray.com/user/downloadSubjectPublicKey?username=bintray" -o Release-neofetch.key && sudo apt-key add Release-neofetch.key && rm Release-neofetch.key
 apt-get update
