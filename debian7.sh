@@ -83,6 +83,14 @@ mv screenfetch-dev /usr/bin/screenfetch-dev
 chmod +x /usr/bin/screenfetch-dev
 echo "clear" >> .profile
 echo "screenfetch-dev" >> .profile
+
+# instal neofetch
+cd
+wget https://github.com/dylanaraps/neofetch/blob/master/neofetch.1'
+mv neofetch /usr/bin/neofetch
+chmod +x /usr/bin/neofetch
+echo "clear" >> .profile
+echo "neofetch" >> .profile
 echo "clear" >> .bashrc 
 echo 'e "                 __   _,--="=--,_   __' >> .bashrc
 echo 'e "                /  \."    .-.    "./  \' >> .bashrc
