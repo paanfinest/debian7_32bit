@@ -65,31 +65,49 @@ apt-file update
 # setting vnstat
 vnstat -u -i venet0
 service vnstat restart
-# install webserver 
-apt-get -y install nginx 
 
-# install essential package 
-apt-get -y install bmon iftop htop nmap axel nano iptables traceroute sysv-rc-conf dnsutils bc nethogs openvpn vnstat less screen psmisc apt-file whois ptunnel ngrep mtr git zsh mrtg snmp snmpd snmp-mibs-downloader unzip unrar rsyslog debsums rkhunter 
-apt-get -y install build-essential 
+# update
+apt-get update; apt-get -y upgrade;
 
-# disable exim 
-service exim4 stop 
+# install webserver
+apt-get -y install nginx php5-fpm php5-cli
+
+# install essential package
+apt-get -y install bmon iftop htop nmap axel nano iptables traceroute sysv-rc-conf dnsutils bc nethogs openvpn vnstat less screen psmisc apt-file whois ptunnel ngrep mtr git zsh mrtg snmp snmpd snmp-mibs-downloader unzip unrar rsyslog debsums rkhunter
+apt-get -y install build-essential
+
+# disable exim
+service exim4 stop
 sysv-rc-conf exim4 off
 
-# instal neofetch
+# update apt-file
+apt-file update
+
+# setting vnstat
+vnstat -u -i venet0
+service vnstat restart
+
+# install screenfetch
 cd
-wget https://github.com/dylanaraps/neofetch/blob/master/neofetch.1'
-mv neofetch /usr/bin/neofetch
-chmod +x /usr/bin/neofetch
-echo "clear" >> .profile
 
-# install neofetch
-echo "deb http://dl.bintray.com/dawidd6/neofetch jessie main" | sudo tee -a /etc/apt/sources.list
-curl -L "https://bintray.com/user/downloadSubjectPublicKey?username=bintray" -o Release-neofetch.key && sudo apt-key add Release-neofetch.key && rm Release-neofetch.key
-apt-get update
-apt-get install neofetch
-echo "neofetch" >> .profile
-
+#touch screenfetch-dev
+cd
+wget https://github.com/KittyKatt/screenFetch/archive/master.zip
+apt-get install -y unzip
+unzip master.zip
+mv screenFetch-master/screenfetch-dev /usr/bin
+cd /usr/bin
+mv screenfetch-dev screenfetch
+chmod +x /usr/bin/screenfetch
+chmod 755 screenfetch
+cd
+echo "clear" >> .bash_profile
+echo "screenfetch" >> .bash_profile
+#wget -O screenfetch-dev "https://raw.githubusercontent.com/rizal180499/Auto-Installer-VPS/master/conf/screenfetch-dev"
+#mv screenfetch-dev /usr/bin/screenfetch
+#chmod +x /usr/bin/screenfetch
+#echo "clear" >> .profile
+#echo "screenfetch" >> .profile
 echo "clear" >> .bashrc 
 echo 'e "                 __   _,--="=--,_   __' >> .bashrc
 echo 'e "                /  \."    .-.    "./  \' >> .bashrc
