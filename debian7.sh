@@ -83,9 +83,6 @@ mv screenfetch-dev /usr/bin/screenfetch-dev
 chmod +x /usr/bin/screenfetch-dev
 echo "clear" >> .profile
 echo "screenfetch-dev" >> .profile
-$ neofet ch
-$ neofetch options
-$ neofetch --config off --bold off --colors 4 1 8 8 8 7
 echo "clear" >> .bashrc 
 echo 'e "                 __   _,--="=--,_   __' >> .bashrc
 echo 'e "                /  \."    .-.    "./  \' >> .bashrc
