@@ -65,8 +65,8 @@ echo 'e "           .-"-.   \      |      /   .-"-.' >> .bashrc
 echo 'e "     .----{     }--|  /,.-'-.,\  |--{     }----.' >> .bashrc
 echo 'e "      )   (_)_)_)  \_/`~-===-~`\_/  (_(_(_)   (' >> .bashrc
 echo 'e " (|SELAMAT DATANG DI VPS PHREAKER'S JATENG OFFICIAL|)' >> .bashrc 
- ' >> .bashrc 
- echo 'echo -e "Ketik menu untuk menampilkan daftar perintah"' >> .bashrc 
+echo 'echo -e ""' >> .bashrc
+echo 'echo -e "Ketik menu untuk menampilkan daftar perintah"' >> .bashrc 
 echo 'echo -e ""' >> .bashrc 
 
 # install webserver 
