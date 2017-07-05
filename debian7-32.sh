@@ -1,6 +1,6 @@
 #!/bin/bash 
 # 
-#Script Copyright www.fornesia.com # Mod Pa'an Finest 
+#Script PHREAKERS JATENG OFFICIAL | Pa'an Finest 
 # ================================================== 
 # 
 # initialisasi 
@@ -67,8 +67,9 @@ echo 'e "                        .-"-.   \      |      /   .-"-."' >> .bashrc
 echo 'e "                  .----{     }--|  /,.-'-.,\  |--{     }----."' >> .bashrc
 echo 'e "                   )   (_)_)_)  \_/`~-===-~`\_/  (_(_(_)   ("' >> .bashrc
 echo 'e "             (|SELAMAT DATANG DI VPS PHREAKER'S JATENG OFFICIAL|)"' >> .bashrc 
-echo 'echo -e ""' >> .bashrc
-echo 'echo -e "Ketik menu untuk menampilkan daftar perintah"' >> .bashrc 
+echo 'e "              ).+=========[ Created By Pa'an Finest ]========+.("' >> .bashrc
+echo 'e "             '--------------------------------------------------'"'  >> .bashrc
+echo 'echo -e "Ketik menu untuk menampilkan daftar perintah"' >> .bashrc "' >> .bashrc
 echo 'echo -e ""' >> .bashrc 
 
 # install webserver 
@@ -209,10 +210,10 @@ echo "Webmin : http://$MYIP:10000/" | tee -a log-install.txt
 echo "Timezone : Asia/Jakarta (GMT +7)" | tee -a log-install.txt 
 echo "IPv6 : [off]" | tee -a log-install.txt 
 echo "" | tee -a log-install.txt 
-echo "Original Script by Fornesia, Rzengineer & Fawzya" | tee -a log-install.txt echo "Modifi By Pa'an Finest" | tee -a log-install.txt 
+echo "Original Script PHREAKERS JATENG OFFICIAL" | tee -a log-install.txt echo "Modifi By Pa'an Finest" | tee -a log-install.txt 
 echo "" | tee -a log-install.txt 
 echo "Log Instalasi --> /root/log-install.txt" | tee -a log-install.txt 
-echo "" | tee -a log-install.txt echo "INSTAL SUKSES BOS!!!, SILAHKAN REBOOT VPS ANDA" | tee -a log-install.txt 
+echo "" | tee -a log-install.txt echo "INSTAL SUKSES BOS!!! VPS REBOOT SETIAP 12 JAM SEKALI, SILAHKAN REBOOT VPS ANDA" | tee -a log-install.txt 
 echo "" | tee -a log-install.txt echo "===========================================" | tee -a log-install.txt 
 cd 
 rm -f /root/debian7.sh
