@@ -57,16 +57,16 @@ echo "deb http://dl.bintray.com/dawidd6/neofetch jessie main" | sudo tee -a /etc
 apt-get update 
 apt-get install neofetch 
 echo "clear" >> .bashrc 
-echo 'e "                __   _,--="=--,_   __' >> .bashrc
-echo 'e "               /  \."    .-.    "./  \' >> .bashrc
-echo 'e "              /  ,/  _   : :   _  \/` \' >> .bashrc
-echo 'e "              \  `| /o\  :_:  /o\ |\__/' >> .bashrc
-echo 'e "               `-'| :="~` _ `~"=: |' >> .bashrc
-echo 'e "                  \`     (_)     `/' >> .bashrc
-echo 'e "           .-"-.   \      |      /   .-"-.' >> .bashrc 
-echo 'e "     .----{     }--|  /,.-'-.,\  |--{     }----.' >> .bashrc
-echo 'e "      )   (_)_)_)  \_/`~-===-~`\_/  (_(_(_)   (' >> .bashrc
-echo 'e " (|SELAMAT DATANG DI VPS PHREAKER'S JATENG OFFICIAL|)' >> .bashrc 
+echo 'e "                             __   _,--="=--,_   __"' >> .bashrc
+echo 'e "                            /  \."    .-.    "./  \"' >> .bashrc
+echo 'e "                           /  ,/  _   : :   _  \/` \"' >> .bashrc
+echo 'e "                           \  `| /o\  :_:  /o\ |\__/"' >> .bashrc
+echo 'e "                            `-'| :="~` _ `~"=: |"' >> .bashrc
+echo 'e "                               \`     (_)     `/"' >> .bashrc
+echo 'e "                        .-"-.   \      |      /   .-"-."' >> .bashrc 
+echo 'e "                  .----{     }--|  /,.-'-.,\  |--{     }----."' >> .bashrc
+echo 'e "                   )   (_)_)_)  \_/`~-===-~`\_/  (_(_(_)   ("' >> .bashrc
+echo 'e "             (|SELAMAT DATANG DI VPS PHREAKER'S JATENG OFFICIAL|)"' >> .bashrc 
 echo 'echo -e ""' >> .bashrc
 echo 'echo -e "Ketik menu untuk menampilkan daftar perintah"' >> .bashrc 
 echo 'echo -e ""' >> .bashrc 
