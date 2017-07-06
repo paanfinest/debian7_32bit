@@ -132,10 +132,12 @@ service webmin restart
 # download script 
 cd /usr/bin 
 wget -O menu "https://raw.githubusercontent.com/paanfinest/debian7_32bit/master/menu.sh" 
-wget -O usernew "https://raw.githubusercontent.com/paanfinest/debian7_32bit/master/usernew.sh" wget -O trial "https://raw.githubusercontent.com/paanfinest/debian7_32bit/master/trial.sh" 
+wget -O usernew "https://raw.githubusercontent.com/paanfinest/debian7_32bit/master/usernew.sh" 
+wget -O trial "https://raw.githubusercontent.com/paanfinest/debian7_32bit/master/trial.sh" 
 wget -O hapus "https://raw.githubusercontent.com/paanfinest/debian7_32bit/master/hapus.sh" 
 wget -O cek "https://raw.githubusercontent.com/paanfinest/debian7_32bit/master/user-login.sh" 
-wget -O member "https://raw.githubusercontent.com/paanfinest/debian7_32bit/master/user-list.sh" wget -O resvis "https://raw.githubusercontent.com/paanfinest/debian7_32bit/master/resvis.sh" 
+wget -O member "https://raw.githubusercontent.com/paanfinest/debian7_32bit/master/user-list.sh" 
+wget -O resvis "https://raw.githubusercontent.com/paanfinest/debian7_32bit/master/resvis.sh" 
 wget -O speedtest "https://raw.githubusercontent.com/ForNesiaFreak/FNS_Debian7/fornesia.com/null/speedtest_cli.py"
 wget -O info "https://raw.githubusercontent.com/paanfinest/debian7_32bit/master/info.sh" 
 wget -O expired "https://raw.githubusercontent.com/paanfinest/debian7_32bit/master/user-expired.sh" 
