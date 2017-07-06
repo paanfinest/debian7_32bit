@@ -3,6 +3,7 @@
 #Script Copyright www.fornesia.com # Mod Pa'an Finest 
 # ================================================== 
 # 
+
 # initialisasi 
 var export DEBIAN_FRONTEND=noninteractive 
 OS=`uname -m`; 
@@ -54,19 +55,19 @@ apt-file update
 echo "deb http://dl.bintray.com/dawidd6/neofetch jessie main" | sudo tee -a /etc/apt/sources.list curl -L "https://bintray.com/user/downloadSubjectPublicKey?username=bintray" -o Release-neofetch.key && sudo apt-key add Release-neofetch.key && rm Release-neofetch.key 
 apt-get update 
 apt-get install neofetch 
+
 echo "clear" >> .bashrc 
-echo 'e "                 __   _,--="=--,_   __' >> .bashrc
-echo 'e "                /  \."    .-.    "./  \' >> .bashrc
-echo 'e "               /  ,/  _   : :   _  \/` \' >> .bashrc
-echo 'e "               \  `| /o\  :_:  /o\ |\__/' >> .bashrc
-echo 'e "                `-'| :="~` _ `~"=: |' >> .bashrc
-echo 'e "                   \`     (_)     `/' >> .bashrc
-echo 'e "            .-"-.   \      |      /   .-"-.' >> .bashrc 
-echo 'e "      .----{     }--|  /,.-'-.,\  |--{     }----.' >> .bashrc
-echo 'e "       )   (_)_)_)  \_/`~-===-~`\_/  (_(_(_)   (' >> .bashrc
-echo 'e " (|SELAMAT DATANG DI VPS PHREAKER'S JATENG OFFICIAL|)' >> .bashrc 
- ' >> .bashrc 
- echo 'echo -e "Ketik menu untuk menampilkan daftar perintah"' >> .bashrc 
+echo 'echo -e "                 __   _,--="=--,_   __"' >> .bashrc
+echo 'echo -e "                /  \."    .-.    "./  \"' >> .bashrc
+echo 'echo -e "               /  ,/  _   : :   _  \/` \"' >> .bashrc
+echo 'echo -e "               \  `| /o\  :_:  /o\ |\__/"' >> .bashrc
+echo 'echo -e "                `-'| :="~` _ `~"=: |"' >> .bashrc
+echo 'echo -e "                   \`     (_)     `/"' >> .bashrc
+echo 'echo -e "            .-"-.   \      |      /   .-"-."' >> .bashrc 
+echo 'echo -e "      .----{     }--|  /,.-'-.,\  |--{     }----."' >> .bashrc
+echo 'echo -e "       )   (_)_)_)  \_/`~-===-~`\_/  (_(_(_)   ("' >> .bashrc
+echo 'echo -e " (|SELAMAT DATANG DI VPS PHREAKER'S JATENG OFFICIAL|)"' >> .bashrc 
+echo 'echo -e "Ketik menu untuk menampilkan daftar perintah"' >> .bashrc 
 echo 'echo -e ""' >> .bashrc 
 
 # install webserver 
@@ -147,7 +148,7 @@ wget -O cek "https://raw.githubusercontent.com/pqanfinest/debian7_32bit/master/u
 wget -O member "https://raw.githubusercontent.com/paanfinest/debian7_32bit/master/user-list.sh" wget -O resvis "https://raw.githubusercontent.com/paanfinest/debian7_32bit/master/resvis.sh" 
 wget -O speedtest "https://raw.githubusercontent.com/ForNesiaFreak/FNS_Debian7/fornesia.com/null/speedtest_cli.py"
 wget -O info "https://raw.githubusercontent.com/paanfinest/debian7_32bit/master/info.sh" 
-wget -O about "https://raw.githubusercontent.com/paanfinest/debian7_32bit/master/user-expired.sh" 
+wget -O expired "https://raw.githubusercontent.com/paanfinest/debian7_32bit/master/user-expired.sh" 
 echo "0 0 * * * root /usr/bin/reboot" > /etc/cron.d/reboot 
 echo "* * * * * service dropbear restart" > /etc/cron.d/dropbear 
 chmod +x menu 
