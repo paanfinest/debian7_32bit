@@ -2,8 +2,7 @@
 # 
 #Script Copyright www.fornesia.com # Mod Pa'an Finest 
 # ================================================== 
-# 
-
+#
 # initialisasi 
 var export DEBIAN_FRONTEND=noninteractive 
 OS=`uname -m`; 
