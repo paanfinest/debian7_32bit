@@ -1,5 +1,6 @@
 #!/bin/bash
 #Menu 
+
 echo -e "
 echo -e "                           __   _,--="=--,_"
 echo -e "                          /  \."    .-.    "./  \"
@@ -23,3 +24,4 @@ echo -e "4.)hapus (Menghapus Akun SSH & OpenVPN) 11.)speedtest (Speedtest VPS)"
 echo -e "5.)cek (Cek User Login)                 12.)exit (Keluar Dari VPS)"
 echo -e "6.)member (Cek Member SSH & OpenVPN)"
 echo -e "7.)expired (Cek User SSH & OpenVPN)"
+echo -e ""
