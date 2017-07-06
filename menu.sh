@@ -1,7 +1,6 @@
 #!/bin/bash
 #Menu 
 
-echo -e "
 echo -e "                           __   _,--="=--,_"
 echo -e "                          /  \."    .-.    "./  \"
 echo -e "                         /  ,/  _   : :   _  \/` \"
