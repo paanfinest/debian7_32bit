@@ -197,7 +197,7 @@ echo "menu (Menampilkan daftar perintah yang tersedia)" | tee -a log-install.txt
 echo "usernew (Membuat Akun SSH)" | tee -a log-install.txt 
 echo "trial (Membuat Akun Trial)" | tee -a log-install.txt 
 echo "hapus (Menghapus Akun SSH)" | tee -a log-install.txt 
-echo "cek (Cek User Login)" | tee -a log-install.txt 
+echo "user login (Cek User Login)" | tee -a log-install.txt 
 echo "member (Cek Member SSH)" | tee -a log-install.txt 
 echo "resvis (Restart Service dropbear, webmin, squid3, openvpn dan ssh)" | tee -a log-install.txt 
 echo "reboot (Reboot VPS)" | tee -a log-install.txt 
