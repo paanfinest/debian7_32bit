@@ -1,4 +1,4 @@
-#!/bin/bas
+#!/bin/bash
 echo "" > /root/infouser.txt
 echo "" > /root/expireduser.txt
 echo "" > /root/alluser.txt 
