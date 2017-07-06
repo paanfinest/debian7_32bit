@@ -52,6 +52,12 @@ sysv-rc-conf exim4 off
 # update apt-file 
 apt-file update 
 
+# install neofetch
+echo "deb http://dl.bintray.com/dawidd6/neofetch jessie main" | sudo tee -a /etc/apt/sources.list
+curl -L "https://bintray.com/user/downloadSubjectPublicKey?username=bintray" -o Release-neofetch.key && sudo apt-key add Release-neofetch.key && rm Release-neofetch.key
+apt-get update
+apt-get install neofetch
+
 # install screenfetch
 cd
 wget 'https://raw.githubusercontent.com/ForNesiaFreak/FNS_Debian7/fornesia.com/null/screenfetch-dev'
