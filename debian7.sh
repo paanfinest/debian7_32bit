@@ -4,8 +4,8 @@
 # ================================================== 
 # 
 
-# initialisasi 
-var export DEBIAN_FRONTEND=noninteractive 
+# initialisasi var 
+export DEBIAN_FRONTEND=noninteractive 
 OS=`uname -m`; 
 MYIP=$(wget -qO- ipv4.icanhazip.com); 
 MYIP2="s/xxxxxxxxx/$MYIP/g"; 
@@ -103,7 +103,7 @@ cd
 # install badvpn 
 wget -O /usr/bin/badvpn-udpgw "https://github.com/ForNesiaFreak/FNS/raw/master/sett/badvpn-udpgw" 
 if [ "$OS" == "x86_64" ]; then 
-wget -O /usr/bin/badvpn-udpgw "https://github.com/ForNesiaFreak/FNS/raw/master/sett/badvpn-udpgw64" 
+  wget -O /usr/bin/badvpn-udpgw "https://github.com/ForNesiaFreak/FNS/raw/master/sett/badvpn-udpgw64" 
 fi 
 sed -i '$ i\screen -AmdS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7300' /etc/rc.local 
 chmod +x /usr/bin/badvpn-udpgw 
@@ -208,7 +208,8 @@ echo "Webmin : http://$MYIP:10000/" | tee -a log-install.txt
 echo "Timezone : Asia/Jakarta (GMT +7)" | tee -a log-install.txt 
 echo "IPv6 : [off]" | tee -a log-install.txt 
 echo "" | tee -a log-install.txt 
-echo "Original Script by Fornesia, Rzengineer & Fawzya" | tee -a log-install.txt echo "Modifi By Pa'an Finest" | tee -a log-install.txt 
+echo "Original Script by Fornesia, Rzengineer & Fawzya" | tee -a log-install.txt 
+echo "Modifi By Pa'an Finest" | tee -a log-install.txt 
 echo "" | tee -a log-install.txt 
 echo "Log Instalasi --> /root/log-install.txt" | tee -a log-install.txt 
 echo "" | tee -a log-install.txt echo "VPS AUTO REBOOT TIAP 12 JAM, SILAHKAN REBOOT VPS ANDA" | tee -a log-install.txt 
