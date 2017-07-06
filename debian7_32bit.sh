@@ -50,25 +50,13 @@ sysv-rc-conf exim4 off
 
 # update apt-file 
 apt-file update 
-
-# install neofetch 
-echo "deb http://dl.bintray.com/dawidd6/neofetch jessie main" | sudo tee -a /etc/apt/sources.list curl -L "https://bintray.com/user/downloadSubjectPublicKey?username=bintray" -o Release-neofetch.key && sudo apt-key add Release-neofetch.key && rm Release-neofetch.key 
-apt-get update 
-apt-get install neofetch 
-
-echo "clear" >> .bashrc 
-echo 'echo -e "                 __   _,--="=--,_   __"' >> .bashrc
-echo 'echo -e "                /  \."    .-.    "./  \"' >> .bashrc
-echo 'echo -e "               /  ,/  _   : :   _  \/` \"' >> .bashrc
-echo 'echo -e "               \  `| /o\  :_:  /o\ |\__/"' >> .bashrc
-echo 'echo -e "                `-'| :="~` _ `~"=: |"' >> .bashrc
-echo 'echo -e "                   \`     (_)     `/"' >> .bashrc
-echo 'echo -e "            .-"-.   \      |      /   .-"-."' >> .bashrc 
-echo 'echo -e "      .----{     }--|  /,.-'-.,\  |--{     }----."' >> .bashrc
-echo 'echo -e "       )   (_)_)_)  \_/`~-===-~`\_/  (_(_(_)   ("' >> .bashrc
-echo 'echo -e " (|SELAMAT DATANG DI VPS PHREAKER'S JATENG OFFICIAL|)"' >> .bashrc 
-echo 'echo -e "Ketik menu untuk menampilkan daftar perintah"' >> .bashrc 
-echo 'echo -e ""' >> .bashrc 
+# install screenfetch
+cd
+wget 'https://raw.githubusercontent.com/ForNesiaFreak/FNS_Debian7/fornesia.com/null/screenfetch-dev'
+mv screenfetch-dev /usr/bin/screenfetch-dev
+chmod +x /usr/bin/screenfetch-dev
+echo "clear" >> .profile
+echo "screenfetch-dev" >> .profile
 
 # install webserver 
 cd 
