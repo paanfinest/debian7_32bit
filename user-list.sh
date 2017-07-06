@@ -1,6 +1,6 @@
 #!/bin/bash 
 echo "-------------------------------" 
-echo "USERNAME            EXP DATE " 
+echo "USERNAME            EXP DATE   " 
 echo "-------------------------------" 
 while read expired 
 do 
