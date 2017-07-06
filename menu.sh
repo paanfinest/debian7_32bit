@@ -1,12 +1,12 @@
 #!/bin/bash
 #Menu 
 
-echo -e "             __________________________________________________
-echo -e "            | SELAMAT DATANG DI VPS PHREAKER'S JATENG OFFICIAL |
-echo -e "            |  Admin : Pa'an Finest     Admin : Imron Sya'faat |
-echo -e "            |  Admin : Vicky Bramantiya Admin : Aji Kurniawan  |
-echo -e "            |  Admin : Affan Fattahila  Admin : Said Ramadhan  |
-echo -e "            |__________________________________________________|
+echo -e "             __________________________________________________"
+echo -e "            | SELAMAT DATANG DI VPS PHREAKER'S JATENG OFFICIAL |"
+echo -e "            |  Admin : Pa'an Finest     Admin : Imron Sya'faat |"
+echo -e "            |  Admin : Vicky Bramantiya Admin : Aji Kurniawan  |"
+echo -e "            |  Admin : Affan Fattahila  Admin : Said Ramadhan  |"
+echo -e "            |__________________________________________________|"
 echo -e ""
 echo -e "1.)menu (Menampilkan Daftar Perintah)   8.)resvis (Restart Service Dropbear)"
 echo -e "2.)usernew (Membuat Akun SSH & OpenVPN) 9.)info (Menampilkan Informasi Sistem)"
