@@ -99,10 +99,12 @@ chmod +x /usr/bin/badvpn-udpgw
 screen -AmdS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7300 
 
 cd 
-# setting port ssh 
-sed -i 's/Port 22/Port 22/g' /etc/ssh/sshd_config 
-sed -i '/Port 22/a Port 143' /etc/ssh/sshd_config 
-service ssh restart 
+# setting port ssh
+sed -i 's/Port 22/Port 22/g' /etc/ssh/sshd_config
+#sed -i '/Port 22/a Port 80' /etc/ssh/sshd_config
+sed -i '/Port 22/a Port 143' /etc/ssh/sshd_config
+sed -i 's/#Banner/Banner/g' /etc/ssh/sshd_config
+service ssh restart
 
 # install dropbear 
 apt-get -y install dropbear 
