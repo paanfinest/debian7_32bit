@@ -2,6 +2,7 @@
 #Menu 
 
 echo -e "             __________________________________________________"
+echo -e "            |                                                  |"
 echo -e "            | SELAMAT DATANG DI VPS PHREAKER'S JATENG OFFICIAL |"
 echo -e "            |  Admin : Pa'an Finest     Admin : Imron Sya'faat |"
 echo -e "            |  Admin : Vicky Bramantiya Admin : Aji Kurniawan  |"
