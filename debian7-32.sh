@@ -57,18 +57,18 @@ echo "deb http://dl.bintray.com/dawidd6/neofetch jessie main" | sudo tee -a /etc
 apt-get update 
 apt-get install neofetch 
 echo "clear" >> .bashrc 
-echo 'e "                             __   _,--="=--,_   __"' >> .bashrc
-echo 'e "                            /  \."    .-.    "./  \"' >> .bashrc
-echo 'e "                           /  ,/  _   : :   _  \/` \"' >> .bashrc
-echo 'e "                           \  `| /o\  :_:  /o\ |\__/"' >> .bashrc
-echo 'e "                            `-'| :="~` _ `~"=: |"' >> .bashrc
-echo 'e "                               \`     (_)     `/"' >> .bashrc
-echo 'e "                        .-"-.   \      |      /   .-"-."' >> .bashrc 
-echo 'e "                  .----{     }--|  /,.-'-.,\  |--{     }----."' >> .bashrc
-echo 'e "                   )   (_)_)_)  \_/`~-===-~`\_/  (_(_(_)   ("' >> .bashrc
-echo 'e "             (|SELAMAT DATANG DI VPS PHREAKER'S JATENG OFFICIAL|)"' >> .bashrc 
-echo 'e "              ).+=========[ Created By Pa'an Finest ]========+.("' >> .bashrc
-echo 'e "             '--------------------------------------------------'"'  >> .bashrc
+echo 'echo -e "                       __   _,--="=--,_   __"' >> .bashrc
+echo 'echo -e "                      /  \."    .-.    "./  \"' >> .bashrc
+echo 'echo -e "                     /  ,/  _   : :   _  \/` \"' >> .bashrc
+echo 'echo -e "                     \  `| /o\  :_:  /o\ |\__/"' >> .bashrc
+echo 'echo -e "                      `-'| :="~` _ `~"=: |"' >> .bashrc
+echo 'echo -e "                         \`     (_)     `/"' >> .bashrc
+echo 'echo -e "                  .-"-.   \      |      /   .-"-."' >> .bashrc 
+echo 'echo -e "            .----{     }--|  /,.-'-.,\  |--{     }----."' >> .bashrc
+echo 'echo -e "             )   (_)_)_)  \_/`~-===-~`\_/  (_(_(_)   ("' >> .bashrc
+echo 'echo -e "        (|SELAMAT DATANG DI VPS PHREAKER'S JATENG OFFICIAL|)"' >> .bashrc 
+echo 'echo -e "         ).+=========[ Created By Pa'an Finest ]========+.("' >> .bashrc
+echo 'echo -e "        '--------------------------------------------------'"'  >> .bashrc
 echo 'echo -e "Ketik menu untuk menampilkan daftar perintah"' >> .bashrc "' >> .bashrc
 echo 'echo -e ""' >> .bashrc 
 
